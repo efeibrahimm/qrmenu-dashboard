@@ -20,7 +20,7 @@ class HizmetlerCategories extends Controller
                 ->orderBy('created_at', 'DESC')
                 ->get(),
             'menu' => Services::with('services_details')->get(),
-            'video' => Videos::first(),
+            'video' => Videos::where('visible',1)->first(),
         ];
 
         return $data;

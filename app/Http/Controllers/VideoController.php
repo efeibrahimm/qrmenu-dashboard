@@ -47,4 +47,13 @@ class VideoController extends Controller
         $data = Videos::destroy($id);
         return redirect('/admin/videos')->with('success', 'Deleted Successfuly');
     }
+
+    public function changeVisible($id)
+    {
+        $data = Videos::find($id);
+
+        $data->visible = $data->visible == 1 ? 0 : 1;
+        $data->save();
+        return redirect('/admin/videos')->with('success', 'Visible changed Successfuly');
+    }
 }

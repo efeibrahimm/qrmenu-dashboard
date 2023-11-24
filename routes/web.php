@@ -85,6 +85,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('/videos/add/{id}', [VideoController::class, 'edit']);
     Route::post('/videos/add', [VideoController::class, 'store']);
     Route::get('/videos/del/{id}', [VideoController::class, 'del']);
+    Route::get('/videos/change/{id}', [VideoController::class, 'changeVisible']);
     // ayarlar
     // ayarlar
     Route::get('/hizmetler/detay/{id}', [HizmetlerDetayController::class, 'index']);
