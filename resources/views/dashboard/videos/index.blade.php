@@ -36,11 +36,22 @@
                                     <div class="card radius-10">
                                         <div class="card-body">
                                             <div class="d-flex align-items-start gap-2">
-                                                <video src="{{ asset('images/' . $item->url) }}" style="width: 100%"></video>
-                                               
+                                                <video src="{{ asset('images/' . $item->url) }}"
+                                                    style="width: 100%"></video>
+
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
-                                                <a class="ms-auto" href="/admin/videos/change/{{ $item->id }}">Visible</a>
+                                                @if ($item->visible == 1)
+                                                    <i class="lni lni-checkmark-circle"
+                                                        style="color: green; position:absolute; bottom:18px;left:20px; font-size:20px"
+                                                        title="Live"></i>
+                                                @else
+                                                    <i class="lni lni-ban"
+                                                        style="color: red; position:absolute; bottom:18px;left:20px; font-size:20px"
+                                                        title="not live"></i>
+                                                @endif
+                                                <a class="ms-auto"
+                                                    href="/admin/videos/change/{{ $item->id }}">Change Visible</a>
                                                 <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">show</a>
                                                 <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">Edit</a>
                                             </div>
