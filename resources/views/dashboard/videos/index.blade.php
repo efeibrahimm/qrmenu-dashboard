@@ -36,10 +36,10 @@
 
                                     <div class="card radius-10">
                                         @if ($item->type == 'banner')
-                                            <i class="" style="color: green; font-size:20px" title="Live">
+                                            <i class="" style="color: green; font-size:20px; margin-left:20px" title="Live">
                                                 Banner</i>
                                         @else
-                                            <i class="" style="color: green; font-size:20px" title="Live"> Popup</i>
+                                            <i class="" style="color: green; font-size:20px; margin-left:20px" title="Live"> Popup</i>
                                         @endif
                                         <div class="card-body">
 
