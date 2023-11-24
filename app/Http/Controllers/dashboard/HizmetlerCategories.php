@@ -4,7 +4,6 @@ namespace App\Http\Controllers\dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\CategoryDetails;
-use App\Models\Services;
 use App\Models\ServicesCategory;
 use App\Models\Videos;
 use Illuminate\Http\Request;
@@ -15,11 +14,13 @@ class HizmetlerCategories extends Controller
     {
         $data = [
             'categories' => ServicesCategory::with(['category_details', 'items' => function ($query) {
-                $query->where('status', 1)->orderBy('order','ASC');
-            }, 'items.services_details'])
+                $query->where('status', 1)->orderBy('order', 'ASC');
+            }, 'items.services_details' => function ($query) {
+                $query->orderBy('language', 'ASC');
+            }])
                 ->orderBy('order', 'ASC')
                 ->get(),
-            'video' => Videos::where('visible',1)->first(),
+            'video' => Videos::where('visible', 1)->first(),
         ];
 
         return $data;
