@@ -33,20 +33,18 @@
                         <div class="row row-cols-1 ">
                             @foreach ($data as $item)
                                 <div class="col col-xl-6">
+                                    @if ($item->type == 'banner')
+                                        <i class="" style="color: green;" title="Live"> Banner</i>
+                                    @else
+                                        <i class="" style="color: green;" title="Live"> Popup</i>
+                                    @endif
                                     <div class="card radius-10">
                                         <div class="card-body">
+
                                             <div class="d-flex align-items-start gap-2">
                                                 <video src="{{ asset('images/' . $item->url) }}" style="width: 100%"
                                                     autoplay></video>
-                                                @if ($item->type == 'banner')
-                                                    <i class=""
-                                                        style="color: green; position:absolute; bottom:18px;left:55px; font-size:20px"
-                                                        title="Live"> Banner</i>
-                                                @else
-                                                    <i class=""
-                                                        style="color: green; position:absolute; bottom:18px;left:55px; font-size:20px"
-                                                        title="Live"> Popup</i>
-                                                @endif
+
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
                                                 @if ($item->visible == 1)
