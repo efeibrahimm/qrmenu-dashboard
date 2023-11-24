@@ -33,12 +33,14 @@
                         <div class="row row-cols-1 ">
                             @foreach ($data as $item)
                                 <div class="col col-xl-6">
-                                    @if ($item->type == 'banner')
-                                        <i class="" style="color: green; font-size:20px" title="Live"> Banner</i>
-                                    @else
-                                        <i class="" style="color: green; font-size:20px" title="Live"> Popup</i>
-                                    @endif
+
                                     <div class="card radius-10">
+                                        @if ($item->type == 'banner')
+                                            <i class="" style="color: green; font-size:20px" title="Live">
+                                                Banner</i>
+                                        @else
+                                            <i class="" style="color: green; font-size:20px" title="Live"> Popup</i>
+                                        @endif
                                         <div class="card-body">
 
                                             <div class="d-flex align-items-start gap-2">
