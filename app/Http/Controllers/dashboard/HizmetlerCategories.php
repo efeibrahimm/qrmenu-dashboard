@@ -13,7 +13,9 @@ class HizmetlerCategories extends Controller
     public function allmenu()
     {
         $data = [
-            'categories' => ServicesCategory::with(['category_details', 'items' => function ($query) {
+            'categories' => ServicesCategory::with(['category_details' => function ($query) {
+                $query->orderBy('language', 'ASC');
+            }, 'items' => function ($query) {
                 $query->where('status', 1)->orderBy('order', 'ASC');
             }, 'items.services_details' => function ($query) {
                 $query->orderBy('language', 'ASC');
