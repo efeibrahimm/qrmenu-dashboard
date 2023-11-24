@@ -46,11 +46,11 @@
                 </div>
                 <div class="col-xl-4">
                     @isset($data)
-                        @if ($data[0]->url)
+                        @if ($data->url)
                             <div class="col-md-12">
                                 <label for="bsValidation4" class="form-label">Custom Video</label>
                                 <br>
-                                <video src="{{ asset('images/' . $data[0]->url) }}" style="width:100%" controls></video>
+                                <video src="{{ asset('images/' . $data->url) }}" style="width:100%" controls></video>
                             </div>
                         @endif
                     @endisset
