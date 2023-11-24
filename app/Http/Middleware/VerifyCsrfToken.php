@@ -15,6 +15,6 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         //
         "/feedback",
-        "/allmenu",
+        "/allmenu"
     ];
 }
