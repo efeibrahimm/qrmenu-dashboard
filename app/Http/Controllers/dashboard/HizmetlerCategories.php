@@ -17,7 +17,7 @@ class HizmetlerCategories extends Controller
             'categories' => ServicesCategory::with(['category_details', 'items' => function ($query) {
                 $query->where('status', 1);
             }, 'items.services_details'])
-                ->orderBy('created_at', 'DESC')
+                ->orderBy('order', 'ASC')
                 ->get(),
             'video' => Videos::where('visible',1)->first(),
         ];
