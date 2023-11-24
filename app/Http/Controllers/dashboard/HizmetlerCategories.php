@@ -12,6 +12,10 @@ class HizmetlerCategories extends Controller
 {
     public function allmenu()
     {
+
+        $popup = Videos::where('visible', 1)->where('type','popup')->first() ;
+        $banner =  Videos::where('visible', 1)->where('type','banner')->first();
+
         $data = [
             'categories' => ServicesCategory::with(['category_details' => function ($query) {
                 $query->orderBy('language', 'ASC');
@@ -22,7 +26,8 @@ class HizmetlerCategories extends Controller
             }])
                 ->orderBy('order', 'ASC')
                 ->get(),
-            'video' => Videos::where('visible', 1)->first(),
+            'popup_video' => $popup->url ?? '',
+            'banner_video' => $banner->url ?? '',
         ];
 
         return $data;
