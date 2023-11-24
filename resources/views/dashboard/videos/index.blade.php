@@ -36,12 +36,11 @@
                                     <div class="card radius-10">
                                         <div class="card-body">
                                             <div class="d-flex align-items-start gap-2">
-                                                <video src="{{ asset('images/' . $item->image) }}"></video>
+                                                <video src="{{ asset('images/' . $item->url) }}"></video>
                                                
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
-                                                <a class="ms-auto"
-                                                    href="/admin/videos/del/{{ $item->id }}">Delete</a>
+                                                <a class="ms-auto" href="/admin/videos/change/{{ $item->id }}">Visible</a>
                                                 <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">show</a>
                                                 <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">Edit</a>
                                             </div>
