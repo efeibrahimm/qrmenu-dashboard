@@ -34,9 +34,9 @@
                             @foreach ($data as $item)
                                 <div class="col col-xl-6">
                                     @if ($item->type == 'banner')
-                                        <i class="" style="color: green;" title="Live"> Banner</i>
+                                        <i class="" style="color: green; font-size:20px" title="Live"> Banner</i>
                                     @else
-                                        <i class="" style="color: green;" title="Live"> Popup</i>
+                                        <i class="" style="color: green; font-size:20px" title="Live"> Popup</i>
                                     @endif
                                     <div class="card radius-10">
                                         <div class="card-body">
