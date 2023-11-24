@@ -113,7 +113,7 @@
                                 <ion-icon name="ellipse-outline"></ion-icon>Video Popup
                             </a>
                         </li>
-                        <li> <a href="/admin/ekibimiz">
+                        <li> <a href="/admin/feedback">
                                 <ion-icon name="ellipse-outline"></ion-icon>Feedback
                             </a>
                         </li>
