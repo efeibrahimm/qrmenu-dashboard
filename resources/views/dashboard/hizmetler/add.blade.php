@@ -89,7 +89,7 @@
                                 <div class="col-md-1">
                                     <label for="bsValidation5" class="form-label">Status  <small
                                             class="text-danger"></small></label>
-                                    <input type="checkbox"  style="height: 30px; width:30px" id="bsValidation5" name="status" {{ $data->status ? 'checked' : 'false' }}>
+                                    <input type="checkbox"  style="height: 30px; width:30px" id="bsValidation5" name="status" {{ isset($data->status) && $data->status ? 'checked' : 'false' }}>
                                 </div>
                                 <hr>
                                 <div class="col-xl-12">
