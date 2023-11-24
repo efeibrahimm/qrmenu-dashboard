@@ -68,11 +68,6 @@
 
 
                             </tbody>
-                            <tfoot>
-                                <th>Başlık</th>
-                                <th>Oluşturulma Tarihi</th>
-                                <th>#</th>
-                            </tfoot>
                         </table>
                     </div>
                 </div>
