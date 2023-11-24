@@ -50,7 +50,7 @@
                             <div class="col-md-12">
                                 <label for="bsValidation4" class="form-label">Custom Video</label>
                                 <br>
-                                <video src="{{ asset('images/' . $data[0]->url) }}" style="width:100%"></video>
+                                <video src="{{ asset('images/' . $data[0]->url) }}" style="width:100%" controls></video>
                             </div>
                         @endif
                     @endisset
