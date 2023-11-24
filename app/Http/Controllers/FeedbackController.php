@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\Validator;
 
 class FeedbackController extends Controller
 {
-    public function index(){
-        return view('dashboard.feedback.index',['data' => Feedback::orderBy('created_at','DESC')->get()]);
+    public function index()
+    {
+        return view('dashboard.feedback.index', ['data' => Feedback::orderBy('created_at', 'DESC')->get()]);
     }
     public function store(Request $request)
     {
@@ -21,15 +22,13 @@ class FeedbackController extends Controller
             'ambiance' => 'required',
             'comment' => 'required',
             'value' => 'required',
-            'name' => 'required',
-            'email' => 'required',
         ]);
 
         if ($validator->fails()) {
 
             return [
                 'status' => false,
-                'errors' => $validator->errors()->all() 
+                'errors' => $validator->errors()->all(),
             ];
         } else {
             $item = new Feedback();
@@ -39,8 +38,8 @@ class FeedbackController extends Controller
             $item->ambiance = $request->ambiance;
             $item->comment = $request->comment;
             $item->name = $request->name;
-            $item->email = $request->email;
-            $item->value = $request->value;
+            $item->email = $request->email ?? 'None';
+            $item->value = $request->value ?? 'None';
             $item->save();
             return [
                 'status' => true,
