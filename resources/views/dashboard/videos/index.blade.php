@@ -15,11 +15,11 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="ms-auto">
+                {{-- <div class="ms-auto">
                     <div class="btn-group">
                         <a href="/admin/videos/add" class="btn btn-outline-primary">Add New</a>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="card">
                 <div class="card-body">
@@ -32,26 +32,34 @@
 
                         <div class="row row-cols-1 ">
                             @foreach ($data as $item)
-                                <div class="col col-xl-7">
+                                <div class="col col-xl-6">
                                     <div class="card radius-10">
                                         <div class="card-body">
                                             <div class="d-flex align-items-start gap-2">
-                                                <video src="{{ asset('images/' . $item->url) }}"
-                                                    style="width: 100%" autoplay></video>
-
+                                                <video src="{{ asset('images/' . $item->url) }}" style="width: 100%"
+                                                    autoplay></video>
+                                                @if ($item->type == 'banner')
+                                                    <i class=""
+                                                        style="color: green; position:absolute; bottom:18px;left:55px; font-size:20px"
+                                                        title="Live"> Banner</i>
+                                                @else
+                                                    <i class=""
+                                                        style="color: green; position:absolute; bottom:18px;left:55px; font-size:20px"
+                                                        title="Live"> Popup</i>
+                                                @endif
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
                                                 @if ($item->visible == 1)
-                                                  Live :   <i class="lni lni-checkmark-circle"
+                                                    Live : <i class="lni lni-checkmark-circle"
                                                         style="color: green; position:absolute; bottom:18px;left:55px; font-size:20px"
                                                         title="Live"></i>
                                                 @else
-                                                Live :    <i class="lni lni-ban"
+                                                    Live : <i class="lni lni-ban"
                                                         style="color: red; position:absolute; bottom:18px;left:55px; font-size:20px"
                                                         title="not live"></i>
                                                 @endif
-                                                <a class="ms-auto"
-                                                    href="/admin/videos/change/{{ $item->id }}">Change Visible</a>
+                                                <a class="ms-auto" href="/admin/videos/change/{{ $item->id }}">Change
+                                                    Visible</a>
                                                 <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">show</a>
                                                 <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">Edit</a>
                                             </div>
