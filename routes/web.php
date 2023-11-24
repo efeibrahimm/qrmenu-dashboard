@@ -44,7 +44,7 @@ use App\Http\Controllers\VideoController;
 
 Route::get('/',[HomeController::class,'index']);
 
-Route::get('/allmenu', [HizmetlerCategories::class, 'allmenu']);
+Route::post('/allmenu', [HizmetlerCategories::class, 'allmenu']);
 Route::post('/feedback', [FeedbackController::class, 'store']);
 
 
