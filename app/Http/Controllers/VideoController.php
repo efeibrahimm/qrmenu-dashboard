@@ -16,7 +16,7 @@ class VideoController extends Controller
     }
     public function edit($id)
     {
-        $data = Videos::get();
+        $data = Videos::find($id);
 
         return view('dashboard.videos.add', ['data' => $data]);
     }

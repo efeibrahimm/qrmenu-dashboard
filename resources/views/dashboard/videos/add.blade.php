@@ -24,7 +24,7 @@
                                 enctype="multipart/form-data">
                                 @csrf
 
-                                <input type="hidden" name="id" value="{{ $data[0]->id ?? '' }}">
+                                <input type="hidden" name="id" value="{{ $data->id ?? '' }}">
 
 
 
