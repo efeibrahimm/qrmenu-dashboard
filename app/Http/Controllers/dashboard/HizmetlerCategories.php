@@ -15,7 +15,7 @@ class HizmetlerCategories extends Controller
     {
         $data = [
             'categories' => ServicesCategory::with(['category_details', 'items' => function ($query) {
-                $query->where('status', 1);
+                $query->where('status', 1)->orderBy('order','ASC');
             }, 'items.services_details'])
                 ->orderBy('order', 'ASC')
                 ->get(),
