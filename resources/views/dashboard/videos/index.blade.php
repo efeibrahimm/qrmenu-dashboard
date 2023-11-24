@@ -36,7 +36,7 @@
                                     <div class="card radius-10">
                                         <div class="card-body">
                                             <div class="d-flex align-items-start gap-2">
-                                                <video src="{{ asset('images/' . $item->url) }}"></video>
+                                                <video src="{{ asset('images/' . $item->url) }}" style="width: 100%"></video>
                                                
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
