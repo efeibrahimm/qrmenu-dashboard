@@ -37,7 +37,7 @@
                                         <div class="card-body">
                                             <div class="d-flex align-items-start gap-2">
                                                 <video src="{{ asset('images/' . $item->url) }}"
-                                                    style="width: 100%"></video>
+                                                    style="width: 100%" autoplay></video>
 
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
