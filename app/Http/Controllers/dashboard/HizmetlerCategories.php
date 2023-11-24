@@ -19,7 +19,6 @@ class HizmetlerCategories extends Controller
             }, 'items.services_details'])
                 ->orderBy('created_at', 'DESC')
                 ->get(),
-            'menu' => Services::with('services_details')->get(),
             'video' => Videos::where('visible',1)->first(),
         ];
 
