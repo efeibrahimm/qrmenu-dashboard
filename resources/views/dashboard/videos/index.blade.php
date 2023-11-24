@@ -32,7 +32,7 @@
 
                         <div class="row row-cols-1 ">
                             @foreach ($data as $item)
-                                <div class="col">
+                                <div class="col col-xl-6">
                                     <div class="card radius-10">
                                         <div class="card-body">
                                             <div class="d-flex align-items-start gap-2">
