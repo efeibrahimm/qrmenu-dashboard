@@ -43,11 +43,11 @@
                                             <div class="d-flex align-items-center mt-3">
                                                 @if ($item->visible == 1)
                                                   Live :   <i class="lni lni-checkmark-circle"
-                                                        style="color: green; position:absolute; bottom:18px;left:20px; font-size:20px"
+                                                        style="color: green; position:absolute; bottom:18px;left:50px; font-size:20px"
                                                         title="Live"></i>
                                                 @else
                                                 Live :    <i class="lni lni-ban"
-                                                        style="color: red; position:absolute; bottom:18px;left:20px; font-size:20px"
+                                                        style="color: red; position:absolute; bottom:18px;left:50px; font-size:20px"
                                                         title="not live"></i>
                                                 @endif
                                                 <a class="ms-auto"
