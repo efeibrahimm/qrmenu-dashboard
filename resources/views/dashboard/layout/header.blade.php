@@ -61,22 +61,22 @@
                         <div class="menu-title">Dashboard</div>
                     </a>
                 </li>
-                <li class="menu-label">Menü</li>
+                <li class="menu-label">Menu</li>
 
                 <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon">
                             <ion-icon name="leaf-outline"></ion-icon>
                         </div>
-                        <div class="menu-title">Menü </div>
+                        <div class="menu-title">Menu </div>
                     </a>
                     <ul>
                         <li> <a href="/admin/hizmetler">
-                                <ion-icon name="ellipse-outline"></ion-icon>Tümünü Gör
+                                <ion-icon name="ellipse-outline"></ion-icon>Show All
                             </a>
                         </li>
                         <li> <a href="/admin/hizmetler/add">
-                                <ion-icon name="ellipse-outline"></ion-icon>Yeni Ekle
+                                <ion-icon name="ellipse-outline"></ion-icon>Add New
                             </a>
                         </li>
                         <li>
@@ -84,15 +84,15 @@
                                 <div class="parent-icon">
                                     <ion-icon name="leaf-outline"></ion-icon>
                                 </div>
-                                <div class="menu-title">Kategori</div>
+                                <div class="menu-title">Category</div>
                             </a>
                             <ul>
                                 <li> <a href="/admin/hizmetler/kategori">
-                                        <ion-icon name="ellipse-outline"></ion-icon>Tümünü Gör
+                                        <ion-icon name="ellipse-outline"></ion-icon>Show All
                                     </a>
                                 </li>
                                 <li> <a href="/admin/hizmetler/kategori/add">
-                                        <ion-icon name="ellipse-outline"></ion-icon>Yeni Ekle
+                                        <ion-icon name="ellipse-outline"></ion-icon>Add New
                                     </a>
                                 </li>
                             </ul>
@@ -121,21 +121,21 @@
                 </li>
 
 
-                <li class="menu-label">Kullanıcı Yönetimi</li>
+                <li class="menu-label">Managment</li>
                 <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon">
                             <ion-icon name="newspaper-outline"></ion-icon>
                         </div>
-                        <div class="menu-title">Kullanıcı Yönetimi</div>
+                        <div class="menu-title">Users Managment</div>
                     </a>
                     <ul>
                         <li> <a href="/admin/kullanicilar">
-                                <ion-icon name="ellipse-outline"></ion-icon>Tümünü Gör
+                                <ion-icon name="ellipse-outline"></ion-icon>Show All Users
                             </a>
                         </li>
                         <li> <a href="/admin/kullanicilar/add">
-                                <ion-icon name="ellipse-outline"></ion-icon>Yeni Admin Ekle
+                                <ion-icon name="ellipse-outline"></ion-icon>Add New
                             </a>
                         </li>
                 </li>
@@ -183,7 +183,7 @@
                                                 alt="" class="rounded-circle" width="54" height="54">
                                             <div class="">
                                                 <h6 class="mb-0 dropdown-user-name">Admin</h6>
-                                                <small class="mb-0 dropdown-user-designation text-secondary">Süper
+                                                <small class="mb-0 dropdown-user-designation text-secondary">Super
                                                     Admin</small>
                                             </div>
                                         </div>

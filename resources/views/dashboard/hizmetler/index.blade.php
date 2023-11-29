@@ -63,7 +63,7 @@
                                                     </div>
                                                     <div class="d-flex align-items-center mt-3">
                                                         <a class="ms-auto"
-                                                            href="/admin/hizmetler/del/{{ $item->id }}">Delete</a>
+                                                            onclick="deleteItem({{$item->id}})">Delete</a>
                                                         <a class="ms-auto"
                                                             href="/admin/hizmetler/add/{{ $item->id }}">show</a>
                                                         <a class="ms-auto"
@@ -73,6 +73,15 @@
                                             </div>
                                         </div>
                                     @endforeach
+                                    <script>
+                                        function deleteItem(id){
+                                            kontrol = confirm("Are you sure you want to delete?")
+                                            if (!kontrol) {
+                                                return;
+                                            }   
+                                            window.location.href ="/admin/hizmetler/del/"+id
+                                        }
+                                    </script>
 
                                 </div>
                             @endforeach
