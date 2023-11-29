@@ -5,19 +5,19 @@
         <!-- start page content-->
         <div class="page-content">
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                <div class="breadcrumb-title pe-3">Kullanıcı Yönetimi</div>
+                <div class="breadcrumb-title pe-3">Users Managment</div>
                 <div class="ps-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 p-0 align-items-center">
                             <li class="breadcrumb-item"><a href="javascript:;"><ion-icon name="home-outline"></ion-icon></a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Kullanıcı Yönetimi</li>
+                            <li class="breadcrumb-item active" aria-current="page">Users Managment</li>
                         </ol>
                     </nav>
                 </div>
                 <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/kullanicilar/add" class="btn btn-outline-primary">Yeni Ekle</a>
+                        <a href="/admin/kullanicilar/add" class="btn btn-outline-primary">Add New</a>
                     </div>
                 </div>
             </div>
@@ -34,10 +34,10 @@
                             style="width:100%; min-height:100%">
                             <thead>
                                 <tr>
-                                    <th>Ad Soyad</th>
+                                    <th>Name</th>
                                     <th>Email</th>
-                                    <th>Oluşturulan</th>
-                                    <th>Oluşturulma Tarihi</th>
+                                    <th>Created By</th>
+                                    <th>Created At</th>
                                     <th>#</th>
                                 </tr>
                             </thead>
@@ -70,10 +70,10 @@
 
                             </tbody>
                             <tfoot>
-                                <th>Ad Soyad</th>
+                                <th>Name</th>
                                 <th>Email</th>
-                                <th>Oluşturulan</th>
-                                <th>Oluşturulma Tarihi</th>
+                                <th>Created By</th>
+                                <th>Created At</th>
                                 <th>#</th>
                             </tfoot>
                         </table>
