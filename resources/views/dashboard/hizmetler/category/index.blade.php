@@ -36,6 +36,7 @@
                                 <tr>
                                     <th>Title</th>
                                     <th>Order </th>
+                                    <th>Category Type </th>
                                     <th>Created At </th>
                                     <th>#</th>
                                 </tr>
@@ -46,19 +47,20 @@
                                         <td>{{ $item->category_details[0]->title ?? '' }}</td>
 
                                         <td>{{ $item->order ?? '' }}</td>
+                                        <td>{{ $item->parent_id == null ? "Main Category" : 'Sub Category' }}</td>
                                         <td>{{ $item->created_at ?? '' }}</td>
                                         <td>
                                             <a href="/admin/hizmetler/kategori/add/{{ $item->id ?? '' }}" class="text-warning"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Edit info" aria-label="Edit">
                                                 <ion-icon name="pencil-outline" role="img" class="md hydrated"
-                                                    aria-label="pencil outline"></ion-icon>
+                                                    ></ion-icon>
                                             </a>
-                                            <a href="/admin/hizmetler/kategori/del/{{ $item->id ?? '' }}" class="text-danger"
+                                            <a onclick="deleteItem({{ $item->id ?? '' }})"  class="text-danger"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Delete" aria-label="Delete">
                                                 <ion-icon name="trash-outline" role="img" class="md hydrated"
-                                                    aria-label="trash outline"></ion-icon>
+                                                   ></ion-icon>
                                             </a>
 
                                         </td>
@@ -68,8 +70,8 @@
 
                             </tbody>
                             <tfoot>
-                                <th>Başlık</th>
-                                <th>Oluşturulma Tarihi</th>
+                                <th>Title </th>
+                                <th>Created At</th>
                                 <th>#</th>
                             </tfoot>
                         </table>
@@ -79,6 +81,16 @@
         </div>
     </div>
     <script src="{{ asset('dashboard/assets/js/jquery.min.js') }}"></script>
+
+    <script>
+        function deleteItem(id){
+            kontrol = confirm("Are you sure you want to delete?")
+            if (!kontrol) {
+                return;
+            }   
+            window.location.href ="/admin/hizmetler/kategori/del/"+id
+        }
+    </script>
 
     <!--end row-->
 @endsection

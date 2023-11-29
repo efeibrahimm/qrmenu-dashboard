@@ -47,17 +47,17 @@
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label">Title EN</label>
                                     <input type="text" class="form-control" id="bsValidation3" name="en_title"
-                                        placeholder="Başlık" required value="{{ $en->title ?? '' }}">
+                                        placeholder="Title" required value="{{ $en->title ?? '' }}">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label">Title AR</label>
                                     <input type="text" class="form-control" id="bsValidation3" name="ar_title"
-                                        placeholder="Başlık" required value="{{ $ar->title ?? '' }}">
+                                        placeholder="Title" required value="{{ $ar->title ?? '' }}">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label">Title TR</label>
                                     <input type="text" class="form-control" id="bsValidation3" name="tr_title"
-                                        placeholder="Başlık" required value="{{ $tr->title ?? '' }}">
+                                        placeholder="Title" required value="{{ $tr->title ?? '' }}">
                                 </div>
                                 <div class="col-md-12 pb-0 pt-0">
                                     <label for="bsValidation3" class="form-label">Order</label>
@@ -70,8 +70,8 @@
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label"></label>
                                     <hr>
-                                    eğer alt kategori ise hangi kategorinin alt kategorisi olduğunu belirtin lütfen değilse
-                                    boş bırakınız
+                                    If it is a subcategory, please specify which category it is a subcategory of. If not, please specify which category it is a subcategory of.
+                                    leave it blank
                                     <hr>
                                     <select name="parent_id" id="" class="form-control">
                                         <option value="">Seçiniz</option>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="d-md-flex d-grid align-items-center gap-3">
-                                        <button type="submit" class="btn btn-primary px-4">Ekle</button>
+                                        <button type="submit" class="btn btn-primary px-4">Add </button>
                                     </div>
                                 </div>
 

@@ -81,6 +81,8 @@
                                             }   
                                             window.location.href ="/admin/hizmetler/del/"+id
                                         }
+
+                                        
                                     </script>
 
                                 </div>

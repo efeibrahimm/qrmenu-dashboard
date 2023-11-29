@@ -43,18 +43,14 @@
         <!--start sidebar -->
         <aside class="sidebar-wrapper" data-simplebar="true">
             <div class="sidebar-header">
-                <div>
-                    <img src="{{ asset('dashboard/assets/images/logo-icon-2.png') }}" class="logo-icon"
-                        alt="logo icon">
-                </div>
-                <div>
-                    <h4 class="logo-text">Admin Panel</h4>
-                </div>
+             
+                <img src="{{ asset('/images/bordo.png') }}" class="logo-icon"
+                alt="logo icon" style="width:100%">
             </div>
             <!--navigation-->
             <ul class="metismenu" id="menu">
                 <li>
-                    <a href="/">
+                    <a href="/admin">
                         <div class="parent-icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </div>
@@ -121,7 +117,7 @@
                 </li>
 
 
-                <li class="menu-label">Managment</li>
+                {{-- <li class="menu-label">Managment</li>
                 <li>
                     <a class="has-arrow" href="javascript:;">
                         <div class="parent-icon">
@@ -138,7 +134,7 @@
                                 <ion-icon name="ellipse-outline"></ion-icon>Add New
                             </a>
                         </li>
-                </li>
+                </li> --}}
             </ul>
             </li>
             </ul>

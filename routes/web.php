@@ -30,6 +30,9 @@ use App\Http\Controllers\general\TeamController as GeneralTeamController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReferansController as ControllersReferansController;
 use App\Http\Controllers\VideoController;
+use App\Models\Feedback;
+use App\Models\Services;
+use App\Models\ServicesCategory;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,7 +55,10 @@ Route::get('login', [LoginController::class,'index'])->name('login');
 Route::post('/login',[LoginController::class,'login']);
 Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('/', function () {
-        return view('dashboard.home');
+        $totalMenuItem = Services::count();
+        $totalMenuCategory = ServicesCategory::count();
+        $feedback = Feedback::count();
+        return view('dashboard.home',['category'=>$totalMenuCategory,'totalMenuItem'=> $totalMenuItem,'feedback'=> $feedback]);
     });
     Route::get('/logout',[LoginController::class,'logout']);
    
