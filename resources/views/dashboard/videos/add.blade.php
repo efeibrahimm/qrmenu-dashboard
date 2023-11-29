@@ -30,7 +30,7 @@
 
                                 <div class="col-md-12">
                                     <label for="bsValidation4" class="form-label">Video</label>
-                                    <input type="file" class="form-control" id="bsValidation4" name="image">
+                                    <input type="file" class="form-control" id="bsValidation4" name="image" accept=".mp4">
                                 </div>
 
 
