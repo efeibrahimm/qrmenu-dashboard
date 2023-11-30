@@ -45,13 +45,13 @@ use App\Models\ServicesCategory;
 |
 */
 
-Route::get('/',[HomeController::class,'index']);
+// Route::get('/',[HomeController::class,'index']);
 
 Route::get('/allmenu', [HizmetlerCategories::class, 'allmenu']);
 Route::post('/feedback', [FeedbackController::class, 'store']);
 
 
-Route::get('login', [LoginController::class,'index'])->name('login');
+Route::get('/', [LoginController::class,'index'])->name('login');
 Route::post('/login',[LoginController::class,'login']);
 Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('/', function () {

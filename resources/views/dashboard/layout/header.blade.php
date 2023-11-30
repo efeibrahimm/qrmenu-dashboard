@@ -43,9 +43,8 @@
         <!--start sidebar -->
         <aside class="sidebar-wrapper" data-simplebar="true">
             <div class="sidebar-header">
-             
-                <img src="{{ asset('/images/bordo.png') }}" class="logo-icon"
-                alt="logo icon" style="width:100%">
+
+                <img src="{{ asset('/images/bordo.png') }}" class="logo-icon" alt="logo icon" style="width:100%">
             </div>
             <!--navigation-->
             <ul class="metismenu" id="menu">
@@ -136,7 +135,13 @@
                         </li>
                 </li> --}}
             </ul>
+
+
+
             </li>
+
+            <div style="height: 50vh; display:flex; justify-content:center; align-items:center"> <img src="{{ asset('/images/carbon.svg') }}" class="logo-icon" alt="logo icon" style="width:100%">
+            </div>
             </ul>
             <!--end navigation-->
         </aside>
