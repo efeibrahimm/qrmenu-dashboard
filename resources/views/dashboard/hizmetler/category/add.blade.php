@@ -46,22 +46,22 @@
                                 <input type="hidden" name="id" value="{{ $data->id ?? '' }}">
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label">Title EN</label>
-                                    <input type="text" class="form-control" id="bsValidation3" name="en_title"
+                                    <input type="text" class="form-control" id="bsValidation3" required name="en_title"
                                         placeholder="Title" required value="{{ $en->title ?? '' }}">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label">Title AR</label>
-                                    <input type="text" class="form-control" id="bsValidation3" name="ar_title"
+                                    <input type="text" class="form-control" id="bsValidation3" required name="ar_title"
                                         placeholder="Title" required value="{{ $ar->title ?? '' }}">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label">Title TR</label>
-                                    <input type="text" class="form-control" id="bsValidation3" name="tr_title"
+                                    <input type="text" class="form-control" id="bsValidation3" required name="tr_title"
                                         placeholder="Title" required value="{{ $tr->title ?? '' }}">
                                 </div>
                                 <div class="col-md-12 pb-0 pt-0">
                                     <label for="bsValidation3" class="form-label">Order</label>
-                                    <input type="number" class="form-control" id="bsValidation3" name="order"
+                                    <input type="number" class="form-control" id="bsValidation3" required name="order"
                                         placeholder="1" required value="{{ $data->order ?? '' }}">
                                 </div>
                                 <input type="hidden" name="tr_id" value="{{ $tr->id ?? '' }}">
@@ -69,11 +69,11 @@
                                 <input type="hidden" name="ar_id" value="{{ $ar->id ?? '' }}">
                                 <div class="col-md-12">
                                     <label for="bsValidation3" class="form-label"></label>
-                                    <hr>
+                                    {{-- <hr>
                                     If it is a subcategory, please specify which category it is a subcategory of. If not, please specify which category it is a subcategory of.
                                     leave it blank
-                                    <hr>
-                                    <select name="parent_id" id="" class="form-control">
+                                    <hr> --}}
+                                    <select name="parent_id" id="" class="form-control" required>
                                         <option value="">Seçiniz</option>
                                         @foreach ($allCategory as $category)
                                             @isset($data)

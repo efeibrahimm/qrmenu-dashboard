@@ -23,7 +23,7 @@ class HizmetlerCategories extends Controller
                 $query->where('status', 1)->orderBy('order', 'ASC');
             }, 'subcategories.items' => function ($query) {
                 $query->orderBy('language', 'ASC');
-            }])
+            }])->where('parent_id',null)
                 ->orderBy('order', 'ASC')
                 ->get(),
             'popup_video' => $popup->url ?? '',

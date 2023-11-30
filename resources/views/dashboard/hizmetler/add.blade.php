@@ -54,12 +54,12 @@
 
                                 <div class="col-md-4">
                                     <label for="bsValidation4" class="form-label">Image</label>
-                                    <input type="file" class="form-control" id="bsValidation4" name="image">
+                                    <input type="file" class="form-control" id="bsValidation4" name="image" required>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="bsValidation3" class="form-label">Category</label>
                                     <select name="category_id" id="" class="form-control"
-                                        onchange="getSubCategory(this.value)">
+                                        onchange="getSubCategory(this.value)" required>
                                         <option value="">Seçiniz</option>
                                         @foreach ($categories as $category)
                                             @isset($data)
@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="bsValidation3" class="form-label">Sub Category</label>
-                                    <select name="category_id" id="subcategory" class="form-control">
+                                    <select name="category_id" id="subcategory" class="form-control" required>
                                         <option value="">Seçiniz</option>
                                     </select>
                                 </div>
@@ -89,19 +89,19 @@
                                     <label for="bsValidation5" class="form-label">Price <small
                                             class="text-danger">(AED)</small></label>
                                     <input type="number" class="form-control " id="bsValidation5" name="price"
-                                        placeholder="price" required value="{{ $data->price ?? '' }}">
+                                        placeholder="price" required value="{{ $data->price ?? '' }}" required>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="bsValidation5" class="form-label">Order <small
                                             class="text-danger"></small></label>
                                     <input type="number" class="form-control " id="bsValidation5" name="order"
-                                        placeholder="1" required value="{{ $data->order ?? '' }}">
+                                        placeholder="1" required value="{{ $data->order ?? '' }}" required>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="bsValidation5" class="form-label w-100">Status <small
                                             class="text-danger"></small></label>
                                     <input type="checkbox" style="height: 30px; width:30px" id="bsValidation5"
-                                        name="status" {{ isset($data->status) && $data->status ? 'checked' : 'false' }}>
+                                        name="status" {{ isset($data->status) && $data->status ? 'checked' : 'false' }} required>
                                 </div>
                                 <hr>
                                 <div class="col-xl-12">
