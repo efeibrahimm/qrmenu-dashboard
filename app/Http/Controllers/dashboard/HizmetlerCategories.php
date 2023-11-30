@@ -19,7 +19,9 @@ class HizmetlerCategories extends Controller
         $data = [
             'categories' => ServicesCategory::with(['category_details' => function ($query) {
                 $query->orderBy('language', 'ASC');
-            },'subcategories','subcategories.category_details','subcategories.items' => function ($query) {
+            },'subcategories','subcategories.category_details'=> function($query){
+                $query->orderBy('language', 'ASC');
+            },'subcategories.items' => function ($query) {
                 $query->where('status', 1)->orderBy('order', 'ASC');
             }, 'subcategories.items.services_details' => function ($query) {
                 $query->orderBy('language', 'ASC');
