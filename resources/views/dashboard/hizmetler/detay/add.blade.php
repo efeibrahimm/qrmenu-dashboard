@@ -20,7 +20,7 @@
                 <div class="col-xl-9 mx-auto">
                     <div class="card">
                         <div class="card-body p-4">
-                            <form class="row g-3 needs-validation" action="/admin/hizmetler/detay/add" method="POST" validate
+                            <form class="row g-3 needs-validation" action=" hizmetler/detay/add" method="POST" validate
                                 enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="id" value="{{ $data->id ?? '' }}">

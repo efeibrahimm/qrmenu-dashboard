@@ -37,11 +37,11 @@ class UsersController extends Controller
         $item->created_by = 1;
         // auth()->user()->id
         $item->save();
-        return redirect('/admin/kullanicilar')->with('success', 'Kayıt Başarıyla Eklendi.');
+        return redirect(' kullanicilar')->with('success', 'Kayıt Başarıyla Eklendi.');
     }
     public function del($id)
     {
         $data = User::destroy($id);
-        return redirect('/admin/kullanicilar')->with('success', 'Kayıt Başarıyla Silindi.');
+        return redirect(' kullanicilar')->with('success', 'Kayıt Başarıyla Silindi.');
     }
 }

@@ -1,3 +1,3 @@
 @php
-return  redirect('/admin');   
+return  redirect('admin');   
 @endphp

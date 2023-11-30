@@ -17,7 +17,7 @@
                 </div>
                 <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/kullanicilar/add" class="btn btn-outline-primary">Add New</a>
+                        <a href=" kullanicilar/add" class="btn btn-outline-primary">Add New</a>
                     </div>
                 </div>
             </div>
@@ -50,13 +50,13 @@
                                         <td>{{ $item->created_by ?? '' }}</td>
                                         <td>{{ $item->created_at ?? '' }}</td>
                                         <td>
-                                            <a href="/admin/kullanicilar/add/{{ $item->id ?? '' }}" class="text-warning"
+                                            <a href=" kullanicilar/add/{{ $item->id ?? '' }}" class="text-warning"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Edit info" aria-label="Edit">
                                                 <ion-icon name="pencil-outline" role="img" class="md hydrated"
                                                     aria-label="pencil outline"></ion-icon>
                                             </a>
-                                            <a href="/admin/kullanicilar/del/{{ $item->id ?? '' }}" class="text-danger"
+                                            <a href=" kullanicilar/del/{{ $item->id ?? '' }}" class="text-danger"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Delete" aria-label="Delete">
                                                 <ion-icon name="trash-outline" role="img" class="md hydrated"

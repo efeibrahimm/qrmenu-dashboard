@@ -47,12 +47,12 @@ class HizmetlerDetayController extends Controller
             $item->image =  $imageName;
         }
         $item->save();
-        return redirect('/admin/hizmetler/detay/'.$item->service_id)->with('success', 'Kayıt Başarıyla Güncellendi.');
+        return redirect(' hizmetler/detay/'.$item->service_id)->with('success', 'Kayıt Başarıyla Güncellendi.');
     }
     public function del($id)
     {
         $service_id = ServicesDetail::find($id);
         $data = ServicesDetail::destroy($id);
-        return redirect('/admin/hizmetler/detay/'.$service_id->service_id)->with('success', 'Kayıt Başarıyla Silindi.');
+        return redirect(' hizmetler/detay/'.$service_id->service_id)->with('success', 'Kayıt Başarıyla Silindi.');
     }
 }

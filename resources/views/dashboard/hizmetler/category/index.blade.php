@@ -17,7 +17,7 @@
                 </div>
                 <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/hizmetler/kategori/add" class="btn btn-outline-primary">Add New</a>
+                        <a href=" hizmetler/kategori/add" class="btn btn-outline-primary">Add New</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                                         <td>{{ $item->parent_id == null ? "Main Category" : 'Sub Category' }}</td>
                                         <td>{{ $item->created_at ?? '' }}</td>
                                         <td>
-                                            <a href="/admin/hizmetler/kategori/add/{{ $item->id ?? '' }}" class="text-warning"
+                                            <a href=" hizmetler/kategori/add/{{ $item->id ?? '' }}" class="text-warning"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Edit info" aria-label="Edit">
                                                 <ion-icon name="pencil-outline" role="img" class="md hydrated"
@@ -88,7 +88,7 @@
             if (!kontrol) {
                 return;
             }   
-            window.location.href ="/admin/hizmetler/kategori/del/"+id
+            window.location.href =" hizmetler/kategori/del/"+id
         }
     </script>
 

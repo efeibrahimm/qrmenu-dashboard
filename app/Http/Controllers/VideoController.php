@@ -39,13 +39,13 @@ class VideoController extends Controller
         }
 
         $item->save();
-        return redirect('/admin/videos')->with('success', 'Updated Successfuly');
+        return redirect(' videos')->with('success', 'Updated Successfuly');
     }
 
     public function del($id)
     {
         $data = Videos::destroy($id);
-        return redirect('/admin/videos')->with('success', 'Deleted Successfuly');
+        return redirect(' videos')->with('success', 'Deleted Successfuly');
     }
 
     public function changeVisible($id)
@@ -54,6 +54,6 @@ class VideoController extends Controller
 
         $data->visible = $data->visible == 1 ? 0 : 1;
         $data->save();
-        return redirect('/admin/videos')->with('success', 'Visible changed Successfuly');
+        return redirect(' videos')->with('success', 'Visible changed Successfuly');
     }
 }

@@ -51,6 +51,6 @@ class FeedbackController extends Controller
     public function del($id)
     {
         $data = Feedback::destroy($id);
-        return redirect('/admin/feedback')->with('success', 'Deleted Successfuly.');
+        return redirect(' feedback')->with('success', 'Deleted Successfuly.');
     }
 }

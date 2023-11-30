@@ -55,7 +55,7 @@
 
                                         <td>{{ $item->created_at ?? '' }}</td>
                                         <td>
-                                            <a href="/admin/feedback/del/{{ $item->id ?? '' }}" class="text-danger"
+                                            <a href=" feedback/del/{{ $item->id ?? '' }}" class="text-danger"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Delete" aria-label="Delete">
                                                 <ion-icon name="trash-outline" role="img" class="md hydrated"

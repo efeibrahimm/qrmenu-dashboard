@@ -63,7 +63,7 @@ class HizmetlerCategories extends Controller
         // $item->slug = Str::slug($request->title);
         $item->save();
         $this->saveDetails($item->id, $request);
-        return redirect('/admin/hizmetler/kategori')->with('success', 'Kayıt Başarıyla Eklendi.');
+        return redirect(' hizmetler/kategori')->with('success', 'Kayıt Başarıyla Eklendi.');
     }
     public function saveDetails($id, $obj)
     {
@@ -96,6 +96,6 @@ class HizmetlerCategories extends Controller
     public function del($id)
     {
         $data = ServicesCategory::destroy($id);
-        return redirect('/admin/hizmetler/kategori')->with('success', 'Kayıt Başarıyla Silindi.');
+        return redirect(' hizmetler/kategori')->with('success', 'Kayıt Başarıyla Silindi.');
     }
 }

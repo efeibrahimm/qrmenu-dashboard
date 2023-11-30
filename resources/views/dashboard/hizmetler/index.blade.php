@@ -17,7 +17,7 @@
                 </div>
                 <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/hizmetler/add" class="btn btn-outline-primary">Add New</a>
+                        <a href=" hizmetler/add" class="btn btn-outline-primary">Add New</a>
                     </div>
                 </div>
             </div>
@@ -65,9 +65,9 @@
                                                         <a class="ms-auto"
                                                             onclick="deleteItem({{$item->id}})">Delete</a>
                                                         <a class="ms-auto"
-                                                            href="/admin/hizmetler/add/{{ $item->id }}">show</a>
+                                                            href=" hizmetler/add/{{ $item->id }}">show</a>
                                                         <a class="ms-auto"
-                                                            href="/admin/hizmetler/add/{{ $item->id }}">Edit</a>
+                                                            href=" hizmetler/add/{{ $item->id }}">Edit</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -79,7 +79,7 @@
                                             if (!kontrol) {
                                                 return;
                                             }   
-                                            window.location.href ="/admin/hizmetler/del/"+id
+                                            window.location.href =" hizmetler/del/"+id
                                         }
 
                                         

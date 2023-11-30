@@ -17,7 +17,7 @@
                 </div>
                 {{-- <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/hizmetler/detay/{{ $data->id ?? '' }}" class="btn btn-outline-primary">Sayfa
+                        <a href=" hizmetler/detay/{{ $data->id ?? '' }}" class="btn btn-outline-primary">Sayfa
                             Düzenini Güncelle</a>
                     </div>
                 </div> --}}
@@ -45,7 +45,7 @@
                 <div class="col-xl-8 mx-auto">
                     <div class="card">
                         <div class="card-body p-4">
-                            <form class="row g-3 needs-validation" action="/admin/hizmetler/add" method="POST" validate
+                            <form class="row g-3 needs-validation" action=" hizmetler/add" method="POST" validate
                                 enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="id" value="{{ $data->id ?? '' }}">
@@ -237,7 +237,7 @@
 
     <script>
         function getSubCategory(id) {
-            return fetch(`/admin/hizmetler/subcategories/${id}`)
+            return fetch(` hizmetler/subcategories/${id}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');

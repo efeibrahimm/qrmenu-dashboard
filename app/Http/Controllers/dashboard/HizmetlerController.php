@@ -57,7 +57,7 @@ class HizmetlerController extends Controller
         }
         $item->save();
         $this->saveDetails($item->id, $request);
-        return redirect('/admin/hizmetler')->with('success', 'Updated Successfuly');
+        return redirect(' hizmetler')->with('success', 'Updated Successfuly');
     }
 
     public function addVideo(Request $request){
@@ -70,7 +70,7 @@ class HizmetlerController extends Controller
         }
 
         $item->save();
-        return redirect('/admin/videos')->with('success', 'Updated Successfuly');
+        return redirect(' videos')->with('success', 'Updated Successfuly');
     }
 
     public function saveDetails($id, $obj)
@@ -114,7 +114,7 @@ class HizmetlerController extends Controller
     public function del($id)
     {
         $data = Services::destroy($id);
-        return redirect('/admin/hizmetler')->with('success', 'Deleted Successfuly');
+        return redirect(' hizmetler')->with('success', 'Deleted Successfuly');
     }
 
 }

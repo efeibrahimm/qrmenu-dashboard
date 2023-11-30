@@ -17,7 +17,7 @@
                 </div>
                 <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/hizmetler/detay/add/{{$service_id}}" class="btn btn-outline-primary">Yeni Ekle</a>
+                        <a href=" hizmetler/detay/add/{{$service_id}}" class="btn btn-outline-primary">Yeni Ekle</a>
                     </div>
                 </div>
             </div>
@@ -52,13 +52,13 @@
                                         <td>{{ $item->position ?? '' }}</td>
                                         <td>{{ $item->created_at ?? '' }}</td>
                                         <td>
-                                            <a href="/admin/hizmetler/detay/add/{{ $item->service_id ?? '' }}/{{ $item->id ?? '' }}" class="text-warning"
+                                            <a href=" hizmetler/detay/add/{{ $item->service_id ?? '' }}/{{ $item->id ?? '' }}" class="text-warning"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Edit info" aria-label="Edit">
                                                 <ion-icon name="pencil-outline" role="img" class="md hydrated"
                                                     aria-label="pencil outline"></ion-icon>
                                             </a>
-                                            <a href="/admin/hizmetler/detay/del/{{ $item->id ?? '' }}" class="text-danger"
+                                            <a href=" hizmetler/detay/del/{{ $item->id ?? '' }}" class="text-danger"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
                                                 data-bs-original-title="Delete" aria-label="Delete">
                                                 <ion-icon name="trash-outline" role="img" class="md hydrated"

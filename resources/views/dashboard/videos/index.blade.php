@@ -17,7 +17,7 @@
                 </div>
                 {{-- <div class="ms-auto">
                     <div class="btn-group">
-                        <a href="/admin/videos/add" class="btn btn-outline-primary">Add New</a>
+                        <a href=" videos/add" class="btn btn-outline-primary">Add New</a>
                     </div>
                 </div> --}}
             </div>
@@ -58,10 +58,10 @@
                                                         style="color: red; position:absolute; bottom:18px;left:55px; font-size:20px"
                                                         title="not live"></i>
                                                 @endif
-                                                <a class="ms-auto" href="/admin/videos/change/{{ $item->id }}">Change
+                                                <a class="ms-auto" href=" videos/change/{{ $item->id }}">Change
                                                     Visible</a>
-                                                <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">show</a>
-                                                <a class="ms-auto" href="/admin/videos/add/{{ $item->id }}">Edit</a>
+                                                <a class="ms-auto" href=" videos/add/{{ $item->id }}">show</a>
+                                                <a class="ms-auto" href=" videos/add/{{ $item->id }}">Edit</a>
                                             </div>
                                         </div>
                                     </div>

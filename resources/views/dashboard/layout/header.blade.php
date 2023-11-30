@@ -44,12 +44,12 @@
         <aside class="sidebar-wrapper" data-simplebar="true">
             <div class="sidebar-header">
 
-                <img src="{{ asset('/images/bordo.png') }}" class="logo-icon" alt="logo icon" style="width:100%">
+                <img src="{{ asset('images/bordo.png') }}" class="logo-icon" alt="logo icon" style="width:100%">
             </div>
             <!--navigation-->
             <ul class="metismenu" id="menu">
                 <li>
-                    <a href="/admin">
+                    <a href="/">
                         <div class="parent-icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </div>
@@ -66,11 +66,11 @@
                         <div class="menu-title">Menu </div>
                     </a>
                     <ul>
-                        <li> <a href="/admin/hizmetler">
+                        <li> <a href="/hizmetler">
                                 <ion-icon name="ellipse-outline"></ion-icon>Show All
                             </a>
                         </li>
-                        <li> <a href="/admin/hizmetler/add">
+                        <li> <a href="/hizmetler/add">
                                 <ion-icon name="ellipse-outline"></ion-icon>Add New
                             </a>
                         </li>
@@ -82,11 +82,11 @@
                                 <div class="menu-title">Category</div>
                             </a>
                             <ul>
-                                <li> <a href="/admin/hizmetler/kategori">
+                                <li> <a href="/hizmetler/kategori">
                                         <ion-icon name="ellipse-outline"></ion-icon>Show All
                                     </a>
                                 </li>
-                                <li> <a href="/admin/hizmetler/kategori/add">
+                                <li> <a href="/hizmetler/kategori/add">
                                         <ion-icon name="ellipse-outline"></ion-icon>Add New
                                     </a>
                                 </li>
@@ -104,11 +104,11 @@
                         <div class="menu-title">General</div>
                     </a>
                     <ul>
-                        <li> <a href="/admin/videos">
+                        <li> <a href="/videos">
                                 <ion-icon name="ellipse-outline"></ion-icon>Video Popup
                             </a>
                         </li>
-                        <li> <a href="/admin/feedback">
+                        <li> <a href="/feedback">
                                 <ion-icon name="ellipse-outline"></ion-icon>Feedback
                             </a>
                         </li>
@@ -125,11 +125,11 @@
                         <div class="menu-title">Users Managment</div>
                     </a>
                     <ul>
-                        <li> <a href="/admin/kullanicilar">
+                        <li> <a href=" kullanicilar">
                                 <ion-icon name="ellipse-outline"></ion-icon>Show All Users
                             </a>
                         </li>
-                        <li> <a href="/admin/kullanicilar/add">
+                        <li> <a href=" kullanicilar/add">
                                 <ion-icon name="ellipse-outline"></ion-icon>Add New
                             </a>
                         </li>
@@ -140,7 +140,7 @@
 
             </li>
 
-            <div style="height: 50vh; display:flex; justify-content:center; align-items:center"> <img src="{{ asset('/images/carbon.svg') }}" class="logo-icon" alt="logo icon" style="width:100%">
+            <div style="height: 50vh; display:flex; justify-content:center; align-items:center"> <img src="{{ asset('images/carbon.svg') }}" class="logo-icon" alt="logo icon" style="width:100%">
             </div>
             </ul>
             <!--end navigation-->
@@ -196,7 +196,7 @@
 
 
                                 <li>
-                                    <a class="dropdown-item" href="/admin/logout">
+                                    <a class="dropdown-item" href=" logout">
                                         <div class="d-flex align-items-center">
                                             <div class="">
                                                 <ion-icon name="log-out-outline"></ion-icon>

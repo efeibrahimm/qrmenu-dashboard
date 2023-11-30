@@ -51,9 +51,9 @@ Route::get('/allmenu', [HizmetlerCategories::class, 'allmenu']);
 Route::post('/feedback', [FeedbackController::class, 'store']);
 
 
-Route::get('/', [LoginController::class,'index'])->name('login');
+Route::get('/login', [LoginController::class,'index'])->name('login');
 Route::post('/login',[LoginController::class,'login']);
-Route::prefix('/admin')->middleware('auth')->group(function () {
+Route::prefix('/')->middleware('auth')->group(function () {
     Route::get('/', function () {
         $totalMenuItem = Services::count();
         $totalMenuCategory = ServicesCategory::count();

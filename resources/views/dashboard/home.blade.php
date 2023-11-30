@@ -27,7 +27,7 @@
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-4">
                 <div class="col">
                     <div class="card radius-10">
-                        <a href="/admin/hizmetler">
+                        <a href=" hizmetler">
                             <div class="card-body">
                                 <div class="d-flex align-items-start gap-2">
                                     <div>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col">
                     <div class="card radius-10">
-                        <a href="/admin/hizmetler/kategori">
+                        <a href=" hizmetler/kategori">
                             <div class="card-body">
                                 <div class="d-flex align-items-start gap-2">
                                     <div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col">
                     <div class="card radius-10">
-                        <a href="/admin/feedback">
+                        <a href=" feedback">
                             <div class="card-body">
                                 <div class="d-flex align-items-start gap-2">
                                     <div>
@@ -94,7 +94,7 @@
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-4">
                 <div class="col">
                     <div class="card radius-10">
-                        <a href="/admin/hizmetler/add">
+                        <a href=" hizmetler/add">
                             <div class="card-body">
                                 <div class="d-flex align-items-start gap-2">
                                     <div>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col">
                     <div class="card radius-10">
-                        <a href="/admin/hizmetler/kategori/add">
+                        <a href=" hizmetler/kategori/add">
                             <div class="card-body">
                                 <div class="d-flex align-items-start gap-2">
                                     <div>
@@ -139,7 +139,7 @@
                 </div>
                 <div class="col">
                     <div class="card radius-10">
-                        <a href="/admin/videos">
+                        <a href=" videos">
                             <div class="card-body">
                                 <div class="d-flex align-items-start gap-2">
                                     <div>

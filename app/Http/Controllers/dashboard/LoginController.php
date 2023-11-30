@@ -13,7 +13,7 @@ class LoginController extends Controller
     public function index()
     {
         if (Auth::check()) {
-            return redirect('/admin');
+            return redirect('admin');
         }
         return view('dashboard.auth.login');
     }
@@ -33,7 +33,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect('/admin');
+            return redirect('admin');
         }
 
         return back()->withErrors([
