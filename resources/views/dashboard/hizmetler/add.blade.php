@@ -262,7 +262,7 @@
                 });
         }
 
-        getSubCategory(5); 
+        // getSubCategory(5); 
     </script>
     <!--end row-->
 @endsection

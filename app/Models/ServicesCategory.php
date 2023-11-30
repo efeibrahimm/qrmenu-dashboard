@@ -15,4 +15,7 @@ class ServicesCategory extends Model
     public function items(){
         return $this->hasMany(Services::class,'category_id','id');
     }
+    public function subcategories(){
+        return $this->hasMany(ServicesCategory::class,'parent_id','id');
+    }
 }
